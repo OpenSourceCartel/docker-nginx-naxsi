@@ -36,7 +36,7 @@ COPY confs/supervisord.conf /etc/supervisord.conf
 
 RUN curl -O /etc/nginx/sites-avalible/rp.conf -sL https://gist.githubusercontent.com/jkirkby91/e6de5882f0e6df8e42adf1fb6f8e78b6/raw/5aafd3b95a2ac3b9617fad38adf593b7f6d44a76/nginx-ssl-loadbalancer-proxy-naxsi.conf
 
-RUN curl -s https://gist.githubusercontent.com/jkirkby91/df5436ed5625f3c8e3648f402ac79a80/raw/4e130a53fb0f41632d966fb5accda06951054b14/start.sh -O /start.sh
+COPY start.sh /start.sh
 
 RUN chmod 777 /start.sh
 
