@@ -41,4 +41,4 @@ COPY start.sh /start.sh
 RUN chmod 777 /start.sh
 
 # Set entrypoint
-CMD ["/bin/bash/, "/start.sh"]
+CMD ["/bin/bash/", "/start.sh"]
